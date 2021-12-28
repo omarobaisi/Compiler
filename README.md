@@ -2,17 +2,17 @@
 
 Using the following grammer
 
-program ::= {statement}
-statement ::= "PRINT" (expression | string) nl
-            | "IF" comparison "THEN" nl {statement} "ENDIF" nl
-            | "WHILE" comparison "REPEAT" nl {statement} "ENDWHILE" nl
-            | "LABEL" ident nl
-            | "GOTO" ident nl
-            | "LET" ident "=" expression nl
-            | "INPUT" ident nl
-comparison ::= expression (("==" | "!=" | ">" | ">=" | "<" | "<=") expression)+
-expression ::= term {( "-" | "+" ) term}
-term ::= unary {( "/" | "*" ) unary}
-unary ::= ["+" | "-"] primary
-primary ::= number | ident
-nl ::= '\n'+
+program ::= {statement}<br>
+statement ::= "PRINT" (expression | string) nl<br>
+            | "IF" comparison "THEN" nl {statement} "ENDIF" nl<br>
+            | "WHILE" comparison "REPEAT" nl {statement} "ENDWHILE" nl<br>
+            | "LABEL" ident nl<br>
+            | "GOTO" ident nl<br>
+            | "LET" ident "=" expression nl<br>
+            | "INPUT" ident nl<br>
+comparison ::= expression (("==" | "!=" | ">" | ">=" | "<" | "<=") expression)+<br>
+expression ::= term {( "-" | "+" ) term}<br>
+term ::= unary {( "/" | "*" ) unary}<br>
+unary ::= ["+" | "-"] primary<br>
+primary ::= number | ident<br>
+nl ::= '\n'+<br>
